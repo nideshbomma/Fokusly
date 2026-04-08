@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '26735217039406776');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26735217039406776&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>You're In — Fokusly</title>
@@ -253,10 +272,11 @@
 </head>
 <body>
 
-<!-- ── META PIXEL PURCHASE EVENT — fires ONLY on this page ── -->
 <script>
-  // Uncomment and fill in once your Pixel is set up:
-  // fbq('track', 'Purchase', { value: 199, currency: 'INR' });
+fbq('track', 'Purchase', {
+  value: 199,
+  currency: 'INR'
+});
 </script>
 
 <div class="page">
@@ -287,8 +307,8 @@
   <!-- Download card -->
   <div class="dl-card">
     <div class="dl-card-label"><span class="dot"></span> Ready to download</div>
-    <p>Click the button below to access your tracker. Open it, make a copy to your Drives.</p>
-    <a class="btn-download" href="https://drive.google.com/file/d/1WxmOH0OklQsU72o_RWZsbB6mOq7Xgjs3/view?usp=sharing">
+    <p>Click the button below to access your Google Sheets tracker. Open it, make a copy to your Drive, and you're set up in under 2 minutes.</p>
+    <a class="btn-download" href="https://drive.google.com/drive/folders/1u_zITxe6m6doEITdRr9r3Nnfsz2YDsC_?usp=drive_link">
       <span class="btn-icon">⬇</span>
       Download Your Fokusly Tracker
     </a>
